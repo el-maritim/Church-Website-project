@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
 			}
 		}) 
 
-		// click outisde offcanvas
+		
 		$(document).mouseup(function(e) {
 	    var container = $(".site-mobile-menu");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
 			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
 		});
 	};
-	// sitePlusMinus();
+	
 
 
 	var siteSliderRange = function() {
@@ -123,7 +123,7 @@ jQuery(document).ready(function($) {
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	};
-	// siteSliderRange();
+	
 
 
 	
@@ -172,28 +172,28 @@ jQuery(document).ready(function($) {
 	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
 	  });
 
-	  // $('.slide-one-item-alt').owlCarousel({
-	  //   center: false,
-	  //   items: 1,
-	  //   loop: true,
-			// stagePadding: 0,
-			// smartSpeed: 700,
-	  //   margin: 0,
-	  //   autoplay: true,
-	  //   pauseOnHover: false,
+	  
+	  
+	  
+	  
+			
+			
+	  
+	  
+	  
 
-	  // });
+	  
 
-	  // $('.slide-one-item-alt-text').owlCarousel({
-	  //   center: false,
-	  //   items: 1,
-	  //   loop: true,
-			// stagePadding: 0,
-			// smartSpeed: 700,
-	  //   margin: 0,
-	  //   autoplay: true,
-	  //   pauseOnHover: false,
-	  // });
+	  
+	  
+	  
+	  
+			
+			
+	  
+	  
+	  
+	  
 
 	  $('.slide-one-item-alt').owlCarousel({
 	    center: false,
@@ -257,7 +257,7 @@ jQuery(document).ready(function($) {
 	    scrollProperty: 'scroll'
 	  });
 	};
-	// siteStellar();
+	
 
 	var siteCountDown = function() {
 
@@ -287,7 +287,7 @@ jQuery(document).ready(function($) {
 	};
 	siteSticky();
 
-	// navigation
+	
   var OnePageNavigation = function() {
     var navToggler = $('.site-menu-toggle');
    	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
@@ -326,7 +326,7 @@ jQuery(document).ready(function($) {
 
 
   var siteIstotope = function() {
-  	/* activate jquery isotope */
+  	
 	  var $container = $('#posts').isotope({
 	    itemSelector : '.item',
 	    isFitWidth: true
@@ -340,7 +340,7 @@ jQuery(document).ready(function($) {
 	  
 	  $container.isotope({ filter: '*' });
 
-	    // filter items on button click
+	    
 	  $('#filters').on( 'click', 'button', function() {
 	    var filterValue = $(this).attr('data-filter');
 	    $container.isotope({ filter: filterValue });
